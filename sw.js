@@ -8,7 +8,10 @@ self.addEventListener('fetch',function(event){
                     const clonedResponse = response.clone();
                     caches.open(CACHE_NAME)
                     .then(function (cache) {
-                        cache.put(event.request,clonedResponse);
+                        const fetchUrl = event.request.url;
+                        if(fetchUrl.startsWith("http://localhost")){
+                            cache.put(event.request,clonedResponse);
+                        }
                     });
                     return response;
             });

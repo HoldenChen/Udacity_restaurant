@@ -1,10 +1,15 @@
-### 
+# 运行步骤 
+
+## 1. 启动服务器
+
     ```
       python -m SimpleHTTPServer 8000
     ```
-
-
-# Mobile Web Specialist Certification Course
+## 2. 启动浏览器(推荐Chrome)，在地址栏输入
+    `localhost:8000`  
+    
+    
+Mobile Web Specialist Certification Course
 ---
 #### _Three Stage Course Material Project - Restaurant Reviews_
 
